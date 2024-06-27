@@ -6,6 +6,12 @@ repeat task.wait() until game:IsLoaded()
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("[CLST] Island of Vietnam", "Synapse")
 
+-- Notification Library 
+
+Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
+local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
+
+NotifyLib.prompt('[CLST] Island of Vietnam', 'Loading Cheat...', 3)
 -- Player Tab
 
 local PlayerTab = Window:NewTab("Player")
@@ -65,7 +71,7 @@ TeleportSection2:NewButton("Gun Shop", "Hit that Brother with a Spin MOVEEE!", f
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-116.023804, 224.640625, 109.120186, -0.0871383399, 7.61787522e-09, 0.99619621, 1.74513019e-07, 1, 7.61787522e-09, -0.99619621, 1.74513019e-07, -0.0871383399)
 end)
 TeleportSection2:NewButton("Casino", "Hit that Brother with a Spin MOVEEE!", function()
-    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-116.023804, 224.640625, 109.120186, -0.0871383399, 7.61787522e-09, 0.99619621, 1.74513019e-07, 1, 7.61787522e-09, -0.99619621, 1.74513019e-07, -0.0871383399)
+    game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-113.22403, 224.526001, -119.023582, 0, 0, 1, 0, 1, -0, -1, 0, 0)
 end)
 TeleportSection2:NewButton("Vonda", "Hit that Brother with a Spin MOVEEE!", function()
     game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(260.432587, 225.878632, 59.8830032, 0, 0, 1, 0, 1, -0, -1, 0, 0)
@@ -85,3 +91,5 @@ end)
 EssentialsSection:NewKeybind("Toggle UI", "Pogi Sige Na", Enum.KeyCode.Insert, function()
 	Library:ToggleUI()
 end)
+
+NotifyLib.prompt('[CLST] Island of Vietnam', 'Succesfully Loaded!', 3)
