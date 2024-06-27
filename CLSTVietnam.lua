@@ -6,12 +6,6 @@ repeat task.wait() until game:IsLoaded()
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("[CLST] Island of Vietnam", "Synapse")
 
--- HomeTab
-
-local HomeTab = Window:NewTab("Home")
-
-local HomeSecton = HomeTab:NewSection("Brand new Release!")
-
 -- Player Tab
 
 local PlayerTab = Window:NewTab("Player")
