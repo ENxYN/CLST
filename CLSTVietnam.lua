@@ -1,17 +1,19 @@
--- Init
+-- Makes sure the game loads before launching the script.
 
 repeat task.wait() until game:IsLoaded()
 
 -- Start of Script
+
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
 local Window = Library.CreateLib("[CLST] Island of Vietnam", "Synapse")
 
--- Notification Library 
+-- Notification Library
 
 Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro2/main/ui2"))()
 local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKhonshu/intro/main/ui"))()
 
 NotifyLib.prompt('[CLST] Island of Vietnam', 'Loading Cheat...', 3)
+
 -- Player Tab
 
 local PlayerTab = Window:NewTab("Player")
