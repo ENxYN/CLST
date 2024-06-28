@@ -14,20 +14,12 @@ local NotifyLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/vKh
 
 NotifyLib.prompt('[CLST] Island of Vietnam', 'Loading Cheat...', 3)
 
--- Player Tab
+-- Main Tab
 
-local PlayerTab = Window:NewTab("Player")
+local HomeTab = Window:NewTab("Home")
 
-local PlayerSection = PlayerTab:NewSection("The Player Category")
-PlayerSection:NewSlider("Walk-Speed", "Makes you Zoom in the Speed of Light", 500, 0, function(WS)
-    game:GetService("Players").LocalPlayer.Character.Humanoid.WalkSpeed = WS
-end)
-PlayerSection:NewSlider("Jump-Power", "Makes you Zoom in the Speed of Light", 500, 0, function(JP)
-    game:GetService("Players").LocalPlayer.Character.Humanoid.JumpPower = JP
-end)
-PlayerSection:NewSlider("FOV", "Makes you Zoom in the Speed of Light", 500, 0, function(FOV)
-    game.Workspace.CurrentCamera.FieldOfView = FOV
-end)
+local HomeSection = Tab:NewSection("[Updates]")
+HomeSection:NewLabel("Pogi Release!")
 
 -- Visuals Tab
 
